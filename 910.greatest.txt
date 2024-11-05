@@ -1,0 +1,39 @@
+public class greatest {
+    public static void great(integer x,integer y,integer z){
+        if(x!=0 && y!=0 && z!=0){
+            if(x==y && y==z){
+                System.debug('all three nos are the same.');
+            }
+            else{
+                if(x>y && x>z){
+                    System.debug(x+' is the greatest.');
+                }
+                else{
+                    if(y>x && y>z){
+                        System.debug(y+'is the greatest');
+                    }
+                    else{
+                        if(z>x && z>y){
+                            System.debug(z+'is the greatest');
+                        }
+                        else{
+                            if(x==y && x>z){
+                                System.debug(x+'is the greatest');
+                            }
+                            else{
+                                System.debug(z+'is the greatest');
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+Anon:
+greatest.great(4,7,2);
+
