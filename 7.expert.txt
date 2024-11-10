@@ -119,9 +119,10 @@ int main() {
     }
 
     cout << "Enter the symptoms:" << endl;
+    cin.ignore();  
     for (int i = 0; i < size; ++i) {
         cout << "Symptom " << i + 1 << ": ";
-        cin >> symptoms[i];
+        getline(cin, symptoms[i]);
     }
 
     string result = diagnose(symptoms, size);
